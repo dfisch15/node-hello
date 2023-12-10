@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dennisfischpro690finalservice
+  name: dennisfischpro690finalpreviewservice
 spec:
   selector:
     app: dennisfischpro690final
