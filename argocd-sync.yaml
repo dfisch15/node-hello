@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dennisfischpro690finalAPP
+  name: dennisfischpro690finalapp
   namespace: argocd
 spec:
   project: default
