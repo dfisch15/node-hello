@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dennisfischpro690finalservice
+  name: dennisfischpro690finalAPP
   namespace: argocd
 spec:
   project: default
@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/dfisch15/node-hello.git
     targetRevision: HEAD
-    path: /
+    path: manifest
   destination: 
     server: https://kubernetes.default.svc
     namespace: default
