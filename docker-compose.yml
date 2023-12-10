@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  helloworld:
+    image: node:12.18.1
+    ports:
+      - "3000:3000"
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    command: npm start
+
