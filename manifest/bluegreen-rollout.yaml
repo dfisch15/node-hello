@@ -11,11 +11,11 @@ spec:
   template:
     metadata:
       labels:
-        app: dennisfischpro690finalservice
+        app: dennisfischpro690finalapprollout
     spec:
       containers:
       - name: dennisfischpro690finalapprollout
-        image: dennisfischpro690final.azurecr.io/node:12.18.1::${IMAGE_TAG}
+        image: dennisfischpro690final.azurecr.io/node:12.18.1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
