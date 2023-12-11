@@ -21,6 +21,6 @@ spec:
         - containerPort: 8080
   strategy:
     blueGreen: 
-      activeService: aks-service
-      previewService: aks-preview-service
+      activeService: dennisfischpro690finalservice
+      previewService: dennisfischpro690finalpreviewservice
       autoPromotionEnabled: false
