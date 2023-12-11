@@ -14,10 +14,11 @@ spec:
     spec:
       containers:
         - name: dennisfischpro690final
-          image: dennisfischpro690final.azurecr.io/node:12.18.1
+          image: dennisfischpro690final.azurecr.io/node:12.18.2
           ports:
             - containerPort: 80
   strategy:
     blueGreen:
       activeService: dennisfischpro690finalservice
       previewService: dennisfischpro690finalservice-preview
+      autoPromotionEnabled: false
