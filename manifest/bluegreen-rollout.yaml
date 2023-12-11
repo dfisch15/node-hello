@@ -15,12 +15,12 @@ spec:
     spec:
       containers:
       - name: dennisfischpro690finalapprollout
-        image: dennisfischpro690final.azurecr.io/node:12.18.1::${IMAGE_TAG}
+        image: dennisfischpro690final.azurecr.io/node:12.18.1:blue
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
   strategy:
     blueGreen: 
-      activeService: rollout-bluegreen-active
-      previewService: rollout-bluegreen-preview
+      activeService: aks-service
+      previewService: aks-preview-service
       autoPromotionEnabled: false
