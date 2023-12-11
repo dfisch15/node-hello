@@ -7,20 +7,20 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: dennisfischpro690finalservice
+      app: dennisfischpro690finalrollout
   template:
     metadata:
       labels:
-        app: dennisfischpro690finalapprollout
+        app: dennisfischpro690finalservice
     spec:
       containers:
-      - name: dennisfischpro690finalapprollout
+      - name: dennisfischpro690finalapprolloutcontainer
         image: dennisfischpro690final.azurecr.io/node:12.18.1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
   strategy:
     blueGreen: 
-      activeService: dennisfischpro690finalservice333
+      activeService: dennisfischpro690finalservice
       previewService: dennisfischpro690finalpreviewservice
       autoPromotionEnabled: false
