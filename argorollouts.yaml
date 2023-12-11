@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: dennisfischpro690finalrollout
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dennisfischpro690final
+  template:
+    metadata:
+      labels:
+        app: dennisfischpro690final
+    spec:
+      containers:
+        - name: dennisfischpro690final
+          image: dennisfischpro690final.azurecr.io/node:12.18.1
+          ports:
+            - containerPort: 80
+  strategy:
+    blueGreen:
+      activeService: dennisfischpro690final
+      previewService: dennisfischpro690final-preview

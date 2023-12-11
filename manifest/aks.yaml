@@ -2,6 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dennisfischpro690finaldeployment
+  annotations:
+    argo-rollouts/strategy: "BlueGreen"
+    argo-rollouts/blueGreen: '{"activeService": "dennisfischpro690final", "previewService": "dennisfischpro690final-preview"}'
 spec:
   replicas: 3
   selector:
