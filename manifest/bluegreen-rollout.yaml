@@ -7,7 +7,7 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: dennisfischpro690finalapprollout
+      app: dennisfischpro690finalservice
   template:
     metadata:
       labels:
