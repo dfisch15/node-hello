@@ -19,5 +19,5 @@ spec:
             - containerPort: 80
   strategy:
     blueGreen:
-      activeService: dennisfischpro690final
-      previewService: dennisfischpro690final-preview
+      activeService: dennisfischpro690finalservice
+      previewService: dennisfischpro690finalservice-preview
