@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   helloworld:
-    image: node:12.18.1
+    image: node:12.18.2
     ports:
       - "3000:3000"
     working_dir: /usr/src/app
