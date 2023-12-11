@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        app: dennisfischpro690finalapprollout
+        app: dennisfischpro690finalservice
     spec:
       containers:
       - name: dennisfischpro690finalapprollout
