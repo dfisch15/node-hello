@@ -9,9 +9,6 @@ spec:
     matchLabels:
       app: dennisfischpro690finalrollout
   template:
-    metadata:
-      labels:
-        app: dennisfischpro690final
     spec:
       containers:
       - name: dennisfischpro690finalapprolloutcontainer
